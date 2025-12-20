@@ -1862,7 +1862,7 @@ let landtypeNames = {
     "mountain-sands": "Montaña o Arenales",
     "sands-mountain": "Montaña o Arenales",
     "inland": "Interior",
-    "coastal": "Costero",
+    "coastal": "de Costa",
     "land": "Territorio",
     "invaders": "Invasores",
   },
