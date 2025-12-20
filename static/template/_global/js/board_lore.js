@@ -349,4 +349,16 @@ let localize = {
     utility: "支援",
     uses: "使用",
   },
+  es: {
+    setup: "PREPARACIÓN",
+    playstyle: "ESTILO DE JUEGO",
+    complexity: "COMPLEJIDAD",
+    summary: "CARACTERÍSTICAS",
+    offense: "ATAQUE",
+    control: "CONTROL",
+    fear: "MIEDO",
+    defense: "DEFENSA",
+    utility: "UTILIDAD",
+    uses: "USA",
+  },
 };

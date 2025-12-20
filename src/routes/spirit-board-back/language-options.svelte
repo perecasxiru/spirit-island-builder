@@ -44,5 +44,9 @@
       class="button is-small is-success"
       class:is-light={spiritBoardBack.language !== "hu"}
       on:click={setLanguage("hu", spiritBoardBack)}>Magyar</button>
+    <button
+      class="button is-small is-success"
+      class:is-light={spiritBoardBack.language !== "es"}
+      on:click={setLanguage("es", spiritBoardBack)}>Español</button>
   </div>
 </Section>

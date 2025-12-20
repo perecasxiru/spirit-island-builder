@@ -50,5 +50,9 @@
       class="button is-small is-success"
       class:is-light={adversary.language !== "ja"}
       on:click={setLanguage("ja", adversary)}>日本語</button>
+      <button
+      class="button is-small is-success"
+      class:is-light={adversary.language !== "es"}
+      on:click={setLanguage("es", adversary)}>Español</button>
   </div>
 </Section>

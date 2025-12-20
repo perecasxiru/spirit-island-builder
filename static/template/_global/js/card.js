@@ -432,4 +432,11 @@ let localize = {
     spirit: "対象",
     threshold: "必要条件",
   },
+  es: {
+    speed: "VELOCIDAD",
+    range: "DISTANCIA",
+    land: "TERRITORIO",
+    spirit: "OBJETIVO",
+    threshold: "UMBRAL",
+  },
 };

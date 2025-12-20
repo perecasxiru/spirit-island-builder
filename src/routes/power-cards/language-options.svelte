@@ -46,5 +46,9 @@
       class="button is-small is-success"
       class:is-light={powerCards.language !== "zh"}
       on:click={setLanguage("zh", powerCards)}>中文</button>
+    <button
+      class="button is-small is-success"
+      class:is-light={powerCards.language !== "es"}
+      on:click={setLanguage("es", powerCards)}>Español</button>
   </div>
 </Section>

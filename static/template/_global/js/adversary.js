@@ -109,6 +109,18 @@ let localize = {
     level: "Szint",
     gameEffects: "Játékhatások",
   },
+  es: {
+    baseDifficulty: "DIFICULTAD BASE",
+    additionalLossCondition: "Condiciones adicionales de Derrota",
+    specialRule: "Reglas especiales",
+    none: "Ninguna",
+    difficulty: "Dificultad",
+    fearCards: "Cartas de miedo",
+    cumulative: "acumulativo",
+    escalation: "Escalada",
+    level: "Nivel",
+    gameEffects: "Efectos en la Partida",
+  },
 };
 
 function startMain() {
