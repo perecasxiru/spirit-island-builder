@@ -110,7 +110,7 @@ function addImages(board) {
   //Add Meeple
   const spiritName = board.getElementsByTagName("spirit-name");
   spiritName[0].outerHTML += "<custom-meeple></custom-meeple>";
-  spiritName[0].outerHTML += "<created-with>spiritislandbuilder.com</created-with>";
+  // spiritName[0].outerHTML += "<created-with>spiritislandbuilder.com</created-with>";
 }
 
 function addTrackBanners(board) {
@@ -3208,7 +3208,7 @@ function IconName(str, iconNum = 1) {
           hu: `${IconName(num, txt)} szerzése`,
           ko: `${IconName(num, txt)} 획득`,
           ja: `${IconName(num, txt)}を獲得`,
-          es: `Gana ${IconName(num, txt)}`,
+          es: `Ganar ${IconName(num, txt)}`,
         };
       } else if (options.at(-1).toLowerCase() === "and") {
         localize = {
@@ -3221,7 +3221,7 @@ function IconName(str, iconNum = 1) {
           hu: `${ListLocalize(options.slice(0, -1))} szerzése`,
           ko: `${ListLocalize(options.slice(0, -1))} 획득`,
           ja: `${ListLocalize(options.slice(0, -1))}を獲得`,
-          es: `Gana ${ListLocalize(options.slice(0, -1))}`,
+          es: `Ganar ${ListLocalize(options.slice(0, -1))}`,
         };
       } else {
         localize = {
@@ -3234,7 +3234,7 @@ function IconName(str, iconNum = 1) {
           hu: `${ListLocalize(options, "or")} szerzése`,
           ko: `${ListLocalize(options, "or")} 획득`,
           ja: `${ListLocalize(options, "or")}を獲得`,
-          es: `Gana ${ListLocalize(options, "or")}`,
+          es: `Ganar ${ListLocalize(options, "or")}`,
         };
       }
       subText = localize[lang];
@@ -3268,7 +3268,7 @@ function IconName(str, iconNum = 1) {
           hu: `${numName} Erőkártya szerzése ${txt}`,
           ko: `${txt} 능력 카드 ${numName}장 획득`,
           ja: `${numName} パワーカード獲得 ${txt}`,
-          es: `Gana ${numName} Carta de Poder ${txt}`,
+          es: `Ganar ${numName} Carta de Poder ${txt}`,
         };
       } else if (num) {
         let numName = IconName(num);
@@ -3282,7 +3282,7 @@ function IconName(str, iconNum = 1) {
           hu: `${numName} Erőkártya szerzése`,
           ko: `능력 카드 ${numName}장 획득`,
           ja: `${numName} パワーカード獲得`,
-          es: `Gana ${numName} Carta de Poder`,
+          es: `Ganar ${numName} Carta de Poder`,
         };
       } else {
         localize = {
@@ -3362,7 +3362,7 @@ function IconName(str, iconNum = 1) {
             hu: `Szerzel ${txt} Energiát minden ${opt4} után`,
             ko: `${opt4}마다 ${txt} 에너지 획득`,
             ja: `${opt4}ごとに${txt}エネルギーを獲得`,
-            es: `Gana ${txt} Energía por ${opt4}`,
+            es: `Ganar ${txt} Energía por ${opt4}`,
           };
         } else {
           // custom text, with flat energy
@@ -3376,7 +3376,7 @@ function IconName(str, iconNum = 1) {
             hu: `Szerzel ${num} Energiát és +${txt}-t minden ${opt4} után`,
             ko: `${num} 에너지 획득, ${txt} ${opt4}마다 1씩 추가 획득`,
             ja: `${num}エネルギーを獲得し、${opt4}ごとに+${txt}追加`,
-            es: `Gana ${num} Energía y +${txt} más por ${opt4}`
+            es: `Ganar ${num} Energía y +${txt} más por ${opt4}`
           };
         }
       } else if (opt3) {
@@ -3412,8 +3412,8 @@ function IconName(str, iconNum = 1) {
               ? `表示されている${perIcon}ごとに${txt}エネルギーを獲得`
               : `${perIcon}ごとに${txt}エネルギーを獲得`,
             es: elementNames.has(opt3)
-              ? `Gana ${txt} Energía por ${perIcon} Visible`
-              : `Gana ${txt} Energía por ${perIcon}`,
+              ? `Ganar ${txt} Energía por ${perIcon} Visible`
+              : `Ganar ${txt} Energía por ${perIcon}`,
           };
         } else {
           // scaling w/ flat energy
@@ -3447,8 +3447,8 @@ function IconName(str, iconNum = 1) {
               ? `${num}エネルギーを獲得し、表示されている${perIcon}ごとに+${txt}追加`
               : `${num}エネルギーを獲得し、${perIcon}ごとに+${txt}追加`,
             es: elementNames.has(opt3)
-              ? `Gana ${num} Energía y +${txt} más por ${perIcon} Visible`
-              : `Gana ${num} Energía y +${txt} más por ${perIcon}`,
+              ? `Ganar ${num} Energía y +${txt} más por ${perIcon} Visible`
+              : `Ganar ${num} Energía y +${txt} más por ${perIcon}`,
           };
         }
       } else {
@@ -3860,7 +3860,7 @@ function IconName(str, iconNum = 1) {
             hu: `Jelenlét és ${IconName(txt)} mozgatása együtt`,
             ko: `${IconName(txt)}와 함께 현신 이동`,
             ja: `プレゼンスと${IconName(txt)}を一緒に移動`,
-            es: `Mueve una Presencia y ${IconName(txt)} juntos`,
+            es: `Mover una Presencia y ${IconName(txt)} juntos`,
           };
         } else {
           // Move x presence
@@ -3891,7 +3891,7 @@ function IconName(str, iconNum = 1) {
             hu: "Jelenlét mozgatása " + IconName(num) + " területre",
             ko: IconName(num) + "지역으로 현신 1개 이동",
             ja: IconName(num) + "の土地にプレゼンスを移動",
-            es: "Mueve una Presencia a un territorio " + IconName(num)
+            es: "Mover una Presencia a un territorio " + IconName(num)
           };
         } else {
           // its a number or an element
@@ -3907,7 +3907,7 @@ function IconName(str, iconNum = 1) {
               hu: "Jelenlét mozgatása",
               ko: "현신 1개 이동",
               ja: `プレゼンスを移動`,
-              es: "Mueve una Presencia",
+              es: "Mover una Presencia",
             };
           } else {
             localize = {
@@ -3920,7 +3920,7 @@ function IconName(str, iconNum = 1) {
               hu: "Jelenlét mozgatása " + num,
               ko: "현신 " + num + "개 이동",
               ja: "プレゼンスを移動 " + num,
-              es: "Mueve una Presencia " + num
+              es: "Mover una Presencia " + num
             };
           }
         }
@@ -4815,7 +4815,7 @@ function IconName(str, iconNum = 1) {
         hu: "Szerzel 1 Időt",
         ko: `시간 1개 획득`,
         ja: `1時間を獲得`,
-        es: "Gana 1 Tiempo",
+        es: "Ganar 1 Tiempo",
       };
       subText = localize[lang];
       break;
@@ -4862,7 +4862,7 @@ function IconName(str, iconNum = 1) {
         hu: "Szerzel 2 Időt",
         ko: "시간 2개 획득",
         ja: `2時間を獲得`,
-        es: "Gana 2 Tiempos",
+        es: "Ganar 2 Tiempos",
       };
       subText = localize[lang];
       break;
@@ -4877,7 +4877,7 @@ function IconName(str, iconNum = 1) {
         hu: "Erőkártya szerzése a Sosem Volt Napok pakliból",
         ko: "'존재하지 않았던 나날들'에서 능력 카드 획득",
         ja: `決して訪れなかった日々からパワーカードを獲得`,
-        es: "Gana Carta de Poder de Días que Nunca Fueron",
+        es: "Ganar Carta de Poder de Días que Nunca Fueron",
       };
       subText = localize[lang];
       break;
@@ -5068,16 +5068,16 @@ function IconName(str, iconNum = 1) {
           copy: "少なくとも1つ持っているエレメント",
         },
         es: {
-          sun: "sol",
-          moon: "luna",
-          fire: "fuego",
-          air: "aire",
-          plant: "planta",
-          water: "agua",
-          earth: "tierra",
-          animal: "animal",
-          star: "elemento",
-          any: "cualquier",
+          sun: "sol" + { 's': 'es', "": "" }[plural],
+          moon: "luna" + plural,
+          fire: "fuego" + plural,
+          air: "aire" + plural,
+          plant: "planta" + plural,
+          water: "agua" + plural,
+          earth: "tierra" + plural,
+          animal: "animal" + plural,
+          star: "elemento" + plural,
+          any: "cualquiera" + plural,
           copy: "Elementos del que tienes al menos 1",
         },
       };
@@ -6795,7 +6795,7 @@ function parseSpecialRules(board) {
         for (let i = 0; i < specialOptions.length; i++) {
           let nodeText = specialOptions[i];
           specialHTML +=
-            "<td>" + getPresenceNodeHtml(nodeText, i === 0, i, "special", true) + "</td>";
+            "<td>" + getPresenceNodeHtml(nodeText, i === 0, i, "special", false) + "</td>";
         }
         specialHTML += "</tr>";
         board.getElementsByTagName("special-rules-track")[0].removeAttribute("values");
