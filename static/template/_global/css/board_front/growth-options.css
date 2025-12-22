@@ -139,36 +139,53 @@ growth icon.any {
   background-image: url(../../images/board/element_simple_any.png);
 }
 
+growth icon.any:lang(es) {
+  background-image: url(../../images/board/element_simple_any_es.png);
+}
+
 /* Gain is the exception */
 growth gain icon.sun {
   background-image: url("../../images/board/Sun.png");
 }
+
 growth gain icon.moon {
   background-image: url("../../images/board/Moon.png");
 }
+
 growth gain icon.fire {
   background-image: url("../../images/board/Fire.png");
 }
+
 growth gain icon.air {
   background-image: url("../../images/board/Air.png");
 }
+
 growth gain icon.plant {
   background-image: url("../../images/board/Plant.png");
 }
+
 growth gain icon.water {
   background-image: url("../../images/board/Water.png");
 }
+
 growth gain icon.earth {
   background-image: url("../../images/board/Earth.png");
 }
+
 growth gain icon.animal {
   background-image: url("../../images/board/Animal.png");
 }
+
 growth gain icon.star {
   background-image: url("../../images/board/NewIcons/Element Star.png");
 }
+
 growth gain icon.any {
   background-image: url("../../images/board/Any.png");
+}
+
+growth gain icon.any:lang(es) {
+  background-image: url("../../images/board/Any_es.png");
 }
 
 growth-table.has-special-title {
@@ -216,7 +233,7 @@ board.hide-text growth-text {
   visibility: hidden;
 }
 
-growth sub-section-title > span {
+growth sub-section-title>span {
   flex-grow: 0;
   flex-shrink: 0;
   display: block;
@@ -273,7 +290,7 @@ growth-table.two-table-bottom {
   justify-content: flex-start;
 }
 
-sub-section-title + growth-table {
+sub-section-title+growth-table {
   margin-top: 40px;
 }
 
@@ -689,8 +706,8 @@ growth-cell range.gain-range {
   margin-bottom: 20px;
 }
 
-growth-cell range > range-value,
-range-growth > value {
+growth-cell range>range-value,
+range-growth>value {
   font-size: 40px;
   font-family: "Antropos";
   bottom: 8px;
@@ -701,16 +718,16 @@ range-growth > value {
   top: unset;
 }
 
-growth-cell range-value > custom-energy {
+growth-cell range-value>custom-energy {
   height: 50px;
 }
 
-growth-cell range-value > custom-energy > value,
-growth-cell range-value > custom-energy > value-text {
+growth-cell range-value>custom-energy>value,
+growth-cell range-value>custom-energy>value-text {
   font-size: 24px;
 }
 
-growth-cell range > range-value.range-icon > icon {
+growth-cell range>range-value.range-icon>icon {
   width: 50px;
   height: 35px;
   position: relative;
@@ -733,13 +750,13 @@ move-growth {
   display: block;
 }
 
-move-growth > textvalue {
+move-growth>textvalue {
   font-size: 28px;
   line-height: 28px;
   font-family: "NAME HEADINGS";
 }
 
-move-growth > value > icon {
+move-growth>value>icon {
   top: -4px;
   left: 3px;
   height: 35px;
@@ -975,7 +992,7 @@ custom-icon {
   margin-left: 0px;
 } */
 
-token-wrap > icon {
+token-wrap>icon {
   width: 40px;
   height: 35px;
   margin-bottom: -3px;
@@ -989,6 +1006,7 @@ icon.your-land.add-token {
   justify-content: center;
   align-items: center;
 }
+
 icon.your-land.add-token icon {
   top: unset;
   left: unset;
@@ -1028,8 +1046,7 @@ icon.gain-card-modifier {
   left: -10px;
   top: -33px;
   display: block;
-  filter: drop-shadow(1px 0px 0px) drop-shadow(-1px 0px 0px) drop-shadow(0px 1px 0px)
-    drop-shadow(0px -1px 0px);
+  filter: drop-shadow(1px 0px 0px) drop-shadow(-1px 0px 0px) drop-shadow(0px 1px 0px) drop-shadow(0px -1px 0px);
   color: #ead38d;
 }
 
@@ -1258,13 +1275,13 @@ growth-cell icon.push {
   width: 100px;
 }
 
-growth-cell icon.push > icon {
+growth-cell icon.push>icon {
   left: 16px;
   top: 17px;
   display: block;
 }
 
-growth-cell icon.push-from > .from {
+growth-cell icon.push-from>.from {
   left: 43px;
   top: 8px;
   width: 25px;
@@ -1277,7 +1294,7 @@ growth-cell icon.push-from {
   margin-bottom: 7px;
 }
 
-growth-cell icon.push-from > icon {
+growth-cell icon.push-from>icon {
   position: relative;
   display: block;
   text-align: unset;
@@ -1289,12 +1306,12 @@ growth-cell icon.push-from > icon {
   padding: 0px;
 }
 
-growth-cell icon.gather > icon {
+growth-cell icon.gather>icon {
   left: 48px;
   top: 12px;
 }
 
-growth-cell icon.gather-into > icon {
+growth-cell icon.gather-into>icon {
   left: 79px;
   top: 23px;
 }
@@ -1306,7 +1323,7 @@ growth-cell icon.gather-into {
   margin: 0px;
 }
 
-growth-cell icon.gather-into > icon {
+growth-cell icon.gather-into>icon {
   position: absolute;
   display: block;
   text-align: unset;
@@ -1318,13 +1335,13 @@ growth-cell icon.gather-into > icon {
   padding: 0px;
 }
 
-growth-cell icon.gather-into > .into {
+growth-cell icon.gather-into>.into {
   left: 16px;
   top: 10px;
   width: 35px;
 }
 
-growth-cell icon.gather-into > icon.explorer {
+growth-cell icon.gather-into>icon.explorer {
   height: 35px;
   margin-top: -10px;
   margin-bottom: -6px;
@@ -1355,7 +1372,7 @@ icon-holder icon.backslash {
   margin: 0px;
 }
 
-.terrain-gather > icon-holder {
+.terrain-gather>icon-holder {
   left: 94px;
   top: -10px;
 }
@@ -1391,11 +1408,17 @@ growth-cost::after {
 growth-cost:lang(de)::after {
   content: "Kosten";
 }
+
 growth-cost:lang(hu)::after {
   content: "Költség";
 }
+
 growth-cost:lang(pl)::after {
   content: "Koszt";
+}
+
+growth-cost:lang(es)::after {
+  content: "Coste";
 }
 
 board.hide-text growth-cost::after {
@@ -1413,7 +1436,7 @@ growth-cost.custom {
   align-items: center;
 }
 
-growth-cost.custom > icon {
+growth-cost.custom>icon {
   height: 45px;
   width: 45px;
   display: block;
@@ -1440,6 +1463,10 @@ growth-cost.custom:lang(de)::after {
   content: "Kosten";
 }
 
+growth-cost.custom:lang(es)::after {
+  content: "Coste";
+}
+
 board.hide-text growth-cost.custom::after {
   visibility: hidden;
 }
@@ -1454,7 +1481,7 @@ growth-cost.nonscaling::after {
   content: none;
 }
 
-growth-cost.nonscaling > icon {
+growth-cost.nonscaling>icon {
   height: 45px;
   width: 45px;
 }
@@ -1629,8 +1656,8 @@ push-gather icon.terrain-push {
   margin-left: 0px;
 }
 
-push-gather-range-req icon.terrain-gather > icon,
-push-gather icon.terrain-gather > icon {
+push-gather-range-req icon.terrain-gather>icon,
+push-gather icon.terrain-gather>icon {
   left: 90px;
   top: -10px;
   display: block;
@@ -1642,8 +1669,8 @@ push-gather icon.terrain-gather > icon {
   padding: 0px;
 }
 
-push-gather-range-req icon.terrain-push > icon,
-push-gather icon.terrain-push > icon {
+push-gather-range-req icon.terrain-push>icon,
+push-gather icon.terrain-push>icon {
   left: -22px;
   top: 18px;
   position: relative;
@@ -1654,14 +1681,14 @@ push-gather icon.terrain-push > icon {
   padding: 0px;
 }
 
-push-gather-range-req icon.terrain-push.ocean > icon.from,
-push-gather icon.terrain-push.ocean > icon.from {
+push-gather-range-req icon.terrain-push.ocean>icon.from,
+push-gather icon.terrain-push.ocean>icon.from {
   left: -8px;
   top: -8px;
 }
 
-push-gather-range-req icon.terrain-gather > icon.gather-arrow,
-push-gather icon.terrain-gather > icon.gather-arrow {
+push-gather-range-req icon.terrain-gather>icon.gather-arrow,
+push-gather icon.terrain-gather>icon.gather-arrow {
   left: 60px;
   top: 33px;
   position: relative;
@@ -1672,8 +1699,8 @@ push-gather icon.terrain-gather > icon.gather-arrow {
   padding: 0px;
 }
 
-push-gather-range-req icon.terrain-push > icon.push-arrow,
-push-gather icon.terrain-push > icon.push-arrow {
+push-gather-range-req icon.terrain-push>icon.push-arrow,
+push-gather icon.terrain-push>icon.push-arrow {
   left: 60px;
   top: 38px;
   position: relative;
@@ -1684,12 +1711,7 @@ push-gather icon.terrain-push > icon.push-arrow {
   padding: 0px;
 }
 
-push-gather-range-req
-  icon.terrain-push.ocean
-  > icon.push-arrow
-  push-gather
-  icon.terrain-push.ocean
-  > icon.push-arrow {
+push-gather-range-req icon.terrain-push.ocean>icon.push-arrow push-gather icon.terrain-push.ocean>icon.push-arrow {
   left: 63px;
   top: 17px;
 }
@@ -1718,8 +1740,7 @@ growth-cell icon.terrain-push icon,
 growth-cell icon.push-from icon,
 growth-cell icon.push icon,
 growth-cell icon.push icon-holder icon {
-  filter: drop-shadow(-1px 0px 0px #e2d367) drop-shadow(1px 0px 0px #e2d367)
-    drop-shadow(0px -1px 0px #e2d367) drop-shadow(0px 1px 0px #e2d367);
+  filter: drop-shadow(-1px 0px 0px #e2d367) drop-shadow(1px 0px 0px #e2d367) drop-shadow(0px -1px 0px #e2d367) drop-shadow(0px 1px 0px #e2d367);
 }
 
 growth-cell gain icon.element {
@@ -1898,7 +1919,7 @@ icon.custom-growth-icon {
   background-position: bottom;
 }
 
-custom-growth-icon > * {
+custom-growth-icon>* {
   width: 80px;
   height: 90px;
   margin-top: 0px;
@@ -1910,7 +1931,7 @@ icon.custom-growth-icon.wide-growth {
   width: 200px;
 }
 
-custom-growth-icon.wide-growth > * {
+custom-growth-icon.wide-growth>* {
   width: 200px;
 }
 

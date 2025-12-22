@@ -9,6 +9,7 @@ function startMain() {
   }
 
   board.innerHTML = replaceIcon(board.innerHTML);
+  board.innerHTML += `<custom-meeple></custom-meeple>`;
   buildLoreBoard();
   let right = document.createElement("right");
   let lore = document.querySelectorAll("lore-description")[0];
@@ -61,6 +62,7 @@ function resize() {
   }
 
   dynamicSizing(document.querySelectorAll("spirit-name")[0]);
+
 }
 
 function buildLoreBoard() {

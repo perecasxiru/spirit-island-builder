@@ -86,6 +86,7 @@ function constructCard(data, cardIndex) {
   </rules-container>
 
   <artist-name>${data.artistName}</artist-name>
+  <custom-meeple-white></custom-meeple-white>
   `;
   card.setAttribute("lang", lang);
   setThreshold(card, cardIndex);

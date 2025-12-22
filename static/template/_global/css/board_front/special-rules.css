@@ -399,6 +399,10 @@ special-rules-track icon.any {
   background-image: url("../../images/board/Any.png");
 }
 
+special-rules-track icon.any:lang(es) {
+  background-image: url("../../images/board/Any_es.png");
+}
+
 special-rules-track icon.element {
   width: 65px;
   height: 65px;
@@ -424,7 +428,7 @@ special-rule range.gain-range {
 }
 
 special-rule icon.range-small-icon,
-special-rule range > range-value.range-icon > icon {
+special-rule range>range-value.range-icon>icon {
   width: 33px;
   height: 22px;
   position: relative;
@@ -467,18 +471,22 @@ special-rule icon.tiny {
   width: 20px;
   height: 20px;
 }
+
 special-rule icon.small {
   width: 25px;
   height: 25px;
 }
+
 special-rule icon.medium {
   width: 35px;
   height: 35px;
 }
+
 special-rule icon.large {
   width: 45px;
   height: 45px;
 }
+
 special-rule icon.huge {
   width: 55px;
   height: 55px;

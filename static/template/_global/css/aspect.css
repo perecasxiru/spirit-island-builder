@@ -424,6 +424,10 @@ aspect growth-group icon.star {
 aspect growth-group icon.any {
   background-image: url("../images/board/Any.png");
 }
+aspect growth-group icon.any:lang(es) {
+  background-image: url("../images/board/Any_es.png");
+}
+
 
 aspect-subtext icon.incarna {
   filter: invert(0);

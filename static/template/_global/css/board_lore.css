@@ -108,8 +108,7 @@ third-section-container {
   flex-direction: column;
 }
 
-setup {
-}
+setup {}
 
 setup-title,
 play-style-title,
@@ -303,15 +302,19 @@ summary-of-powers .utility {
 .offense {
   background-image: url("../images/customIcons/Offense_Bar.png");
 }
+
 .control {
   background-image: url("../images/customIcons/Control_Bar_Image.png");
 }
+
 .fear {
   background-image: url("../images/customIcons/Fear_Bar_Image.png");
 }
+
 .defense {
   background-image: url("../images/customIcons/Defense_Bar_Image.png");
 }
+
 .utility {
   background-image: url("../images/customIcons/Utility_Bar_Image.png");
 }
@@ -365,27 +368,35 @@ icon {
 second-section-container icon.sun {
   background-image: url(../images/board/element_simple_sun.png);
 }
+
 second-section-container icon.earth {
   background-image: url(../images/board/element_simple_earth.png);
 }
+
 second-section-container icon.plant {
   background-image: url(../images/board/element_simple_plant.png);
 }
+
 second-section-container icon.fire {
   background-image: url(../images/board/element_simple_fire.png);
 }
+
 second-section-container icon.air {
   background-image: url(../images/board/element_simple_air.png);
 }
+
 second-section-container icon.moon {
   background-image: url(../images/board/element_simple_moon.png);
 }
+
 second-section-container icon.animal {
   background-image: url(../images/board/element_simple_animal.png);
 }
+
 second-section-container icon.water {
   background-image: url(../images/board/element_simple_water.png);
 }
+
 second-section-container icon.any {
   background-image: url(../images/board/element_simple_any.png);
 }
@@ -408,4 +419,11 @@ board.printer-clean {
   border: black 3px solid;
   box-sizing: border-box;
   border-radius: 22px;
+}
+
+custom-meeple {
+  left: 1700px;
+  top: 20px;
+  width: 40px;
+  height: 40px;
 }

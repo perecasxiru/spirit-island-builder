@@ -110,7 +110,7 @@ function addImages(board) {
   //Add Meeple
   const spiritName = board.getElementsByTagName("spirit-name");
   spiritName[0].outerHTML += "<custom-meeple></custom-meeple>";
-  // spiritName[0].outerHTML += "<created-with>spiritislandbuilder.com</created-with>";
+  spiritName[0].outerHTML += "<created-with>spiritislandbuilder.com</created-with>";
 }
 
 function addTrackBanners(board) {
@@ -3747,7 +3747,7 @@ function IconName(str, iconNum = 1) {
         hu: "A távolságokat figyelmen kívül hagyhatod ebben a fordulóban",
         ko: "이번 차례에 사정거리 무시 가능",
         ja: `今ターンは距離を無視できます`,
-        es: "Puedes ignorar la Distancia este turno",
+        es: "Ignorar la Distancia",
       };
       subText = localize[lang];
       break;

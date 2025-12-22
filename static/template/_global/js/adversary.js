@@ -111,15 +111,15 @@ let localize = {
   },
   es: {
     baseDifficulty: "DIFICULTAD BASE",
-    additionalLossCondition: "Condiciones adicionales de Derrota",
+    additionalLossCondition: "Condición de Derrota Adicional",
     specialRule: "Reglas especiales",
     none: "Ninguna",
     difficulty: "Dificultad",
-    fearCards: "Cartas de miedo",
-    cumulative: "acumulativo",
+    fearCards: "Cartas de <br> Miedo",
+    cumulative: "acumulativos",
     escalation: "Escalada",
     level: "Nivel",
-    gameEffects: "Efectos en la Partida",
+    gameEffects: "Efectos de Juego",
   },
 };
 
@@ -189,9 +189,8 @@ function buildAdversary(quickAdversary) {
         </div>
       </loss-condition>
       <escalation>
-        <section-title>${
-          localize[lang]["escalation"]
-        } <icon class="escalation"></icon></section-title>
+        <section-title>${localize[lang]["escalation"]
+    } <icon class="escalation"></icon></section-title>
         <div>
           <strong>${escalation.getAttribute("name")}:</strong> ${escalation.getAttribute("rules")}
         </div>
@@ -199,13 +198,11 @@ function buildAdversary(quickAdversary) {
     </top-info>
     <adversary-levels>
       <header>
-        <header-level>${localize[lang]["level"]}<br>${
-    localize[lang]["difficulty"] ? "(" + localize[lang]["difficulty"] + ")" : ""
-  }</header-level>
+        <header-level>${localize[lang]["level"]}<br>${localize[lang]["difficulty"] ? "(" + localize[lang]["difficulty"] + ")" : ""
+    }</header-level>
         <div>${localize[lang]["fearCards"]}</div>
-        <div>${localize[lang]["gameEffects"]} <span class="cumulative">(${
-    localize[lang]["cumulative"]
-  })</span></div>
+        <div>${localize[lang]["gameEffects"]} <span class="cumulative">(${localize[lang]["cumulative"]
+    })</span></div>
       </header>`;
 
   html += buildLevel(quickAdversary.querySelectorAll("level-1")[0]);
@@ -215,8 +212,9 @@ function buildAdversary(quickAdversary) {
   html += buildLevel(quickAdversary.querySelectorAll("level-5")[0]);
   html += buildLevel(quickAdversary.querySelectorAll("level-6")[0]);
 
-  html += `</adversary-levels><adversary-background></adversary-background><created-with>spiritislandbuilder.com</created-with><custom-meeple></custom-meeple>`;
-
+  html += `</adversary-levels><adversary-background></adversary-background>`;
+  html += `<created-with>spiritislandbuilder.com</created-with>`;
+  html += `<custom-meeple></custom-meeple>`;
   return html;
 }
 

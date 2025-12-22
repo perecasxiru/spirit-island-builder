@@ -225,6 +225,7 @@ adversary-levels header {
   height: 40px;
   pointer-events: none;
 }
+
 :lang(ko) adversary-levels header {
   font-size: 22px;
   line-height: 24px;
@@ -307,7 +308,8 @@ adversary-levels level rule {
 }
 
 adversary-levels line {
-  height: 0px; /* half pixel is intentional - when it is scaled it, it will still be one pixel wide. Was having issues with some lines being two pixels wide and some just one */
+  height: 0px;
+  /* half pixel is intentional - when it is scaled it, it will still be one pixel wide. Was having issues with some lines being two pixels wide and some just one */
   background-color: black;
 }
 
@@ -353,6 +355,7 @@ icon {
 icon.fast {
   background-image: url("../images/board/fast_power.png");
 }
+
 icon.slow {
   background-image: url("../images/board/slow_power.png");
 }
@@ -388,27 +391,35 @@ icon.town {
 icon.sun {
   background-image: url(../images/board/element_simple_sun.png);
 }
+
 icon.earth {
   background-image: url(../images/board/element_simple_earth.png);
 }
+
 icon.plant {
   background-image: url(../images/board/element_simple_plant.png);
 }
+
 icon.fire {
   background-image: url(../images/board/element_simple_fire.png);
 }
+
 icon.air {
   background-image: url(../images/board/element_simple_air.png);
 }
+
 icon.moon {
   background-image: url(../images/board/element_simple_moon.png);
 }
+
 icon.animal {
   background-image: url(../images/board/element_simple_animal.png);
 }
+
 icon.water {
   background-image: url(../images/board/element_simple_water.png);
 }
+
 icon.any {
   background-image: url(../images/board/element_simple_any.png);
 }
@@ -433,6 +444,7 @@ adversary.printer-clean adversary-title,
 adversary.printer-clean adversary-background {
   background-image: none;
 }
+
 adversary.printer-clean {
   border: black 3px solid;
   box-sizing: border-box;
@@ -473,18 +485,22 @@ adversary icon.tiny {
   width: 20px;
   height: 20px;
 }
+
 adversary icon.small {
   width: 25px;
   height: 25px;
 }
+
 adversary icon.medium {
   width: 30px;
   height: 30px;
 }
+
 adversary icon.large {
   width: 40px;
   height: 40px;
 }
+
 adversary icon.huge {
   width: 50px;
   height: 50px;

@@ -265,42 +265,49 @@ element.sun {
   left: 34px;
   width: 57px;
 }
+
 element.moon {
   background-image: url("../images/board/Moon.png");
   top: 186px;
   left: 37px;
   width: 52px;
 }
+
 element.fire {
   background-image: url("../images/board/Fire.png");
   top: 251px;
   left: 33px;
   width: 58px;
 }
+
 element.air {
   background-image: url("../images/board/Air.png");
   top: 315px;
   left: 34px;
   width: 57px;
 }
+
 element.plant {
   background-image: url("../images/board/Plant.png");
   top: 509px;
   left: 34px;
   width: 55px;
 }
+
 element.water {
   background-image: url("../images/board/Water.png");
   top: 379px;
   left: 34px;
   width: 56px;
 }
+
 element.earth {
   background-image: url("../images/board/Earth.png");
   top: 444px;
   left: 35px;
   width: 55px;
 }
+
 element.animal {
   background-image: url("../images/board/Animal.png");
   top: 574px;
@@ -363,11 +370,13 @@ info-title-speed,
 info-speed {
   width: 109px;
 }
+
 info-title-range,
 info-range {
   width: 123px;
   padding-right: 1px;
 }
+
 info-title-target,
 info-target {
   flex-grow: 1;
@@ -386,16 +395,20 @@ info-range icon.sand,
 info-range icon.sands {
   background-image: url("../images/board/sands-presence.png");
 }
+
 info-range icon.wetland,
 info-range icon.wetlands {
   background-image: url("../images/board/wetland-presence.png");
 }
+
 info-range icon.mountain {
   background-image: url("../images/board/mountain-presence.png");
 }
+
 info-range icon.jungle {
   background-image: url("../images/board/jungle-presence.png");
 }
+
 info-range icon.ocean {
   background-image: url("../images/board/ocean-presence.png");
   width: 45px;
@@ -405,50 +418,62 @@ info-range icon.jungle-wetland,
 info-range icon.wetland-jungle {
   background-image: url("../images/board/junglewetland-presence.png");
 }
+
 info-range icon.jungle-wetlands,
 info-range icon.wetlands-jungle {
   background-image: url("../images/board/junglewetland-presence.png");
 }
+
 info-range icon.jungle-sand,
 info-range icon.sand-jungle {
   background-image: url("../images/board/junglesand-presence.png");
 }
+
 info-range icon.jungle-sands,
 info-range icon.sands-jungle {
   background-image: url("../images/board/junglesand-presence.png");
 }
+
 info-range icon.sand-wetland,
 info-range icon.wetland-sand {
   background-image: url("../images/board/sandwetland-presence.png");
 }
+
 info-range icon.sand-wetlands,
 info-range icon.wetlands-sand {
   background-image: url("../images/board/sandwetland-presence.png");
 }
+
 info-range icon.sands-wetland,
 info-range icon.wetland-sands {
   background-image: url("../images/board/sandwetland-presence.png");
 }
+
 info-range icon.sands-wetlands,
 info-range icon.wetlands-sands {
   background-image: url("../images/board/sandwetland-presence.png");
 }
+
 info-range icon.mountain-jungle,
 info-range icon.jungle-mountain {
   background-image: url("../images/board/mountainjungle-presence.png");
 }
+
 info-range icon.mountain-wetland,
 info-range icon.wetland-mountain {
   background-image: url("../images/board/mountainwetland-presence.png");
 }
+
 info-range icon.mountain-wetlands,
 info-range icon.wetlands-mountain {
   background-image: url("../images/board/mountainwetland-presence.png");
 }
+
 info-range icon.mountain-sand,
 info-range icon.sand-mountain {
   background-image: url("../images/board/mountainsand-presence.png");
 }
+
 info-range icon.mountain-sands,
 info-range icon.sands-mountain {
   background-image: url("../images/board/mountainsand-presence.png");
@@ -516,7 +541,7 @@ rules:last-child {
   border-bottom-left-radius: 2px;
 }
 
-rules > div {
+rules>div {
   width: 100%;
 }
 
@@ -626,6 +651,12 @@ artist-name {
   font-size: 11px;
 }
 
+custom-meeple-white {
+  left: 440px;
+  top: 647px;
+  width: 30px;
+}
+
 .or,
 or {
   background-image: url("../images/or.png");
@@ -646,6 +677,10 @@ or {
 
 .or:lang(de) {
   background-image: url("../images/or_de.png");
+}
+
+.or:lang(es) {
+  background-image: url("../images/or_es.png");
 }
 
 icon {
@@ -768,27 +803,35 @@ rules-container icon.terrain-double {
 rules icon.sun {
   background-image: url(../images/board/element_simple_sun.png);
 }
+
 rules icon.earth {
   background-image: url(../images/board/element_simple_earth.png);
 }
+
 rules icon.plant {
   background-image: url(../images/board/element_simple_plant.png);
 }
+
 rules icon.fire {
   background-image: url(../images/board/element_simple_fire.png);
 }
+
 rules icon.air {
   background-image: url(../images/board/element_simple_air.png);
 }
+
 rules icon.moon {
   background-image: url(../images/board/element_simple_moon.png);
 }
+
 rules icon.animal {
   background-image: url(../images/board/element_simple_animal.png);
 }
+
 rules icon.water {
   background-image: url(../images/board/element_simple_water.png);
 }
+
 rules icon.any {
   background-image: url(../images/board/element_simple_any.png);
 }
@@ -812,27 +855,35 @@ rules icon.any {
 threshold icon.sun {
   background-image: url(../images/board/element_simple_sun.png);
 }
+
 threshold icon.earth {
   background-image: url(../images/board/element_simple_earth.png);
 }
+
 threshold icon.plant {
   background-image: url(../images/board/element_simple_plant.png);
 }
+
 threshold icon.fire {
   background-image: url(../images/board/element_simple_fire.png);
 }
+
 threshold icon.air {
   background-image: url(../images/board/element_simple_air.png);
 }
+
 threshold icon.moon {
   background-image: url(../images/board/element_simple_moon.png);
 }
+
 threshold icon.animal {
   background-image: url(../images/board/element_simple_animal.png);
 }
+
 threshold icon.water {
   background-image: url(../images/board/element_simple_water.png);
 }
+
 threshold icon.any {
   background-image: url(../images/board/element_simple_any.png);
 }
