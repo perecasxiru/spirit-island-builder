@@ -131,7 +131,7 @@ function resize() {
 
   //Images
   imageContainers = document.querySelectorAll("img");
-  for (let i = 0; i < imageContainers.length; i++) {}
+  for (let i = 0; i < imageContainers.length; i++) { }
 }
 
 function setThreshold(card) {
@@ -145,20 +145,17 @@ function setThreshold(card) {
     //set elemental thresholds got first threshold
     var conditions = threshold.getAttribute("condition");
     if (conditions) {
-      threshold.innerHTML = `<threshold-condition id="${
-        card.id
-      }thresholdCondition">${getThresholdElements(conditions)}:</threshold-condition>${
-        threshold.innerHTML
-      }`;
+      threshold.innerHTML = `<threshold-condition id="${card.id
+        }thresholdCondition">${getThresholdElements(conditions)}:</threshold-condition>${threshold.innerHTML
+        }`;
     }
 
     //add additional thresholds
     let secondThreshold = thresholds[1];
     if (secondThreshold) {
       var addCondition = secondThreshold.getAttribute("condition");
-      var addConditionText = `<threshold-condition id="${
-        card.id
-      }thresholdCondition${1}">${getThresholdElements(addCondition)}:</threshold-condition>`;
+      var addConditionText = `<threshold-condition id="${card.id
+        }thresholdCondition${1}">${getThresholdElements(addCondition)}:</threshold-condition>`;
       threshold.innerHTML += addConditionText + secondThreshold.innerHTML;
       secondThreshold.remove();
     }
@@ -311,13 +308,13 @@ function balanceText(el) {
   if (debug) {
     console.log(
       "Balancing: " +
-        el.textContent +
-        " H:" +
-        initialHeight +
-        ", W:" +
-        initialWidth +
-        ", LH:" +
-        lineHeight
+      el.textContent +
+      " H:" +
+      initialHeight +
+      ", W:" +
+      initialWidth +
+      ", LH:" +
+      lineHeight
     );
   }
 
@@ -437,6 +434,6 @@ let localize = {
     range: "DISTANCIA",
     land: "TERRITORIO",
     spirit: "OBJETIVO",
-    threshold: "UMBRAL",
+    threshold: "SI TIENES",
   },
 };
