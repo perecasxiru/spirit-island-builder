@@ -334,10 +334,14 @@ special-rules-track {
 }
 
 special-rules-track presence-node {
-  background-image: url("../../images/board/50px_presence_transparent.png");
+  background-image: url(../../images/board/50px_presence_transparent.png);
   background-repeat: no-repeat;
   background-size: 80%;
   background-position: center;
+}
+
+special-rules-track presence-node.empty-background {
+  background-image: none;
 }
 
 special-rules-track presence-node special-track-presence {
@@ -352,6 +356,11 @@ special-rules-track presence-node special-track-presence {
   width: 100%;
   height: 100%;
 }
+
+special-rules-track presence-node.empty-background special-track-presence {
+  background-image: none;
+}
+
 
 special-rule ul {
   margin-block-end: 0px;

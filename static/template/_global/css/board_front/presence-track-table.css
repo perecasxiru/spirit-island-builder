@@ -99,7 +99,7 @@ board.printer-clean presence-bottom {
   background-color: white;
 }
 
-td.middle > presence-node {
+td.middle>presence-node {
   position: relative;
 }
 
@@ -148,7 +148,7 @@ presence-node.tight {
   margin-bottom: 20px;
 }
 
-tr > td:last-of-type {
+tr>td:last-of-type {
   padding-right: 0px;
 }
 
@@ -224,6 +224,10 @@ presence-node.first ring-icon {
 
 presence-node ring-icon {
   background-image: url("../../images/board/CardPlayRing.png");
+}
+
+presence-node ring-icon.empty-background {
+  background-image: none;
 }
 
 presence-node icon.reclaim-one {
@@ -390,15 +394,14 @@ presence-node icon.gather {
   margin-right: 0px;
 }
 
-presence-node icon.gather > icon {
+presence-node icon.gather>icon {
   left: 90px;
   top: -18px;
-  filter: drop-shadow(0px 0px 0px #ead38d) drop-shadow(0px 0px 0px #ead38d)
-    drop-shadow(0px 0px 1px #ead38d) drop-shadow(0px 0px 1px #ead38d);
+  filter: drop-shadow(0px 0px 0px #ead38d) drop-shadow(0px 0px 0px #ead38d) drop-shadow(0px 0px 1px #ead38d) drop-shadow(0px 0px 1px #ead38d);
   height: 90px;
 }
 
-presence-node icon.gain-card-play > icon {
+presence-node icon.gain-card-play>icon {
   position: relative;
   left: -39px;
   top: -28px;
@@ -406,7 +409,7 @@ presence-node icon.gain-card-play > icon {
   width: 60px;
 }
 
-presence-node > icon.deep-layers {
+presence-node>icon.deep-layers {
   position: relative;
   left: -22px;
   top: -135px;
@@ -414,8 +417,8 @@ presence-node > icon.deep-layers {
   width: 60px;
 }
 
-presence-node > icon.energy-deep-layers,
-presence-node > icon.card-deep-layers {
+presence-node>icon.energy-deep-layers,
+presence-node>icon.card-deep-layers {
   position: relative;
   height: 35px;
   width: 60px;
@@ -423,19 +426,19 @@ presence-node > icon.card-deep-layers {
   background-position: center;
 }
 
-presence-node > icon.energy-blank {
+presence-node>icon.energy-blank {
   height: 50px;
   margin-top: -10px;
 }
 
-presence-node > icon.energy-deep-layers {
+presence-node>icon.energy-deep-layers {
   left: -44px;
   top: -4px;
   margin-bottom: -90px;
   transform: translateX(50%);
 }
 
-presence-node > icon.card-deep-layers {
+presence-node>icon.card-deep-layers {
   left: -45px;
   top: -4px;
   margin-bottom: -90px;
@@ -459,9 +462,9 @@ deep-layers {
   align-self: flex-start;
 }
 
-deep-layers > icon.energy-deep-layers,
-deep-layers > icon.card-deep-layers,
-deep-layers > icon.growth-empty-deep-layers {
+deep-layers>icon.energy-deep-layers,
+deep-layers>icon.card-deep-layers,
+deep-layers>icon.growth-empty-deep-layers {
   position: absolute;
   height: 37px;
   width: 60px;
@@ -470,7 +473,7 @@ deep-layers > icon.growth-empty-deep-layers {
   margin: 0px;
 }
 
-deep-layers > icon.energy-blank {
+deep-layers>icon.energy-blank {
   height: 55px;
   margin-top: -10px;
 }
@@ -537,7 +540,7 @@ presence-node-multi {
   align-items: center;
 }
 
-presence-node div.push > icon {
+presence-node div.push>icon {
   width: 25px;
   height: 25px;
 }
@@ -810,7 +813,7 @@ presence-node icon.gain-power-card-blank {
   width: 90px;
 }
 
-icon.gain-power-card-blank > icon {
+icon.gain-power-card-blank>icon {
   height: 45px;
   width: 45px;
 }

@@ -1541,7 +1541,7 @@ let CardPlays = {
   hu: "Kijátszható kártyák",
   ko: `카드 사용 횟수`,
   ja: `カードプレイ`,
-  es: "Cartas Jugadas",
+  es: "Cartas para Jugar",
 };
 let Cost = {
   en: "Cost",
@@ -2058,6 +2058,13 @@ function getPresenceNodeHtml(
       ", trackType: " +
       trackType
     );
+  }
+
+  // Remove all background from node, keep text only
+  if (nodeText.startsWith("nobg")) {
+    nodeText = nodeText.split("-")[1]
+    ring.classList.add("empty-background");
+    presenceNode.classList.add("empty-background");
   }
 
   // Blank nodes
@@ -3920,7 +3927,7 @@ function IconName(str, iconNum = 1) {
               hu: "Jelenlét mozgatása " + num,
               ko: "현신 " + num + "개 이동",
               ja: "プレゼンスを移動 " + num,
-              es: "Mover una Presencia " + num
+              es: "Mover una Presencia"
             };
           }
         }
