@@ -616,6 +616,10 @@
   let emptyScenario = {
     prop: "value",
     demoBoardWasLoaded: false,
+    language: "en",
+    languageOptions: {
+      isVisible: false,
+    },
     previewBoard: {
       isVisible: false,
     },

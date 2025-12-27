@@ -1,4 +1,46 @@
-// const { base } = require("$app/paths");
+let lang = "es";
+let localize = {
+  en: {
+    difficulty: "Difficulty",
+    scenario: "Scenario",
+  },
+  fr: {
+    difficulty: "Difficulté",
+    scenario: "Scénario",
+  },
+  ja: {
+    difficulty: "難易度",
+    scenario: "シナリオ",
+  },
+  ko: {
+    difficulty: "난이도",
+    scenario: "시나리오",
+  },
+  de: {
+    difficulty: "Schwierigkeit",
+    scenario: "Szenario",
+  },
+  pl: {
+    difficulty: "Poziom Trudności",
+    scenario: "Scenariusz",
+  },
+  ar: {
+    difficulty: "الصعوبة",
+    scenario: "سيناريو",
+  },
+  zh: {
+    difficulty: "難度",
+    scenario: "劇本",
+  },
+  hu: {
+    difficulty: "Nehézség",
+    scenario: "Forgatókönyv",
+  },
+  es: {
+    difficulty: "Dificultad",
+    scenario: "Escenario",
+  },
+};
 
 function startMain() {
   buildScenario();
@@ -24,8 +66,17 @@ function getElement(name) {
 function buildScenario(quickScenario) {
   quickScenario = document.querySelectorAll("quick-scenario")[0];
 
+  // --- LANGUAGE SETUP ---
+  lang = quickScenario.getAttribute("lang") || "en";
+  if (!localize[lang]) { lang = "en"; } // Fallback to English
+  const textScenario = localize[lang]["scenario"];
+  const textDifficulty = localize[lang]["difficulty"];
+
+  console.log("AAAA Building scenario in language: " + lang);
+
   // Build Scenario
   let scenario = document.createElement("scenario");
+  scenario.setAttribute("lang", lang); // Set lang on the wrapper for CSS fonts
   quickScenario.parentNode.appendChild(scenario);
   let scenarioFront = getElement("scenario-front");
   let scenarioBack = getElement("scenario-back");
@@ -45,17 +96,20 @@ function buildScenario(quickScenario) {
   let panels = scenarioFront.querySelectorAll("panel");
   let scenarioRight = getElement("scenario-right");
   let scenarioLore = scenarioFront.querySelectorAll("lore-panel")[0];
-  if (scenarioLore && quickScenario.getAttribute("shiftLore") === true) {
+  if (scenarioLore && quickScenario.getAttribute("shiftLore") === "true") {
     scenarioFront.appendChild(scenarioLore);
   }
   let scenarioHeadingFront = document.createElement("scenario-heading");
-  scenarioHeadingFront.innerHTML = "Scenario";
+  scenarioHeadingFront.innerHTML = textScenario;
 
   scenarioFront.appendChild(scenarioFrontBackground);
   scenarioFront.appendChild(scenarioArtHolder);
   scenarioFront.appendChild(scenarioName);
   scenarioFront.appendChild(scenarioHeadingFront);
   scenarioFront.appendChild(scenarioRight);
+
+  let meeple = document.createElement("custom-meeple");
+  scenarioFront.appendChild(meeple);
 
   // Stack panels
   let allPanels = Array.from(scenarioFront.querySelectorAll("panel"));
@@ -67,13 +121,13 @@ function buildScenario(quickScenario) {
   // Build Scenario Back
   let scenarioBackBackground = document.createElement("scenario-background");
   let scenarioDifficulty = document.createElement("scenario-back-difficulty");
-  scenarioDifficulty.innerHTML = `Difficulty <num>${quickScenario.getAttribute(
+  scenarioDifficulty.innerHTML = textDifficulty + ` <num>${quickScenario.getAttribute(
     "difficulty"
   )}</num>`;
   let scenarioBackName = document.createElement("scenario-back-name");
   scenarioBackName.innerHTML = quickScenario.getAttribute("name");
   let scenarioHeadingBack = document.createElement("scenario-heading");
-  scenarioHeadingBack.innerHTML = "Scenario";
+  scenarioHeadingBack.innerHTML = textScenario;
 
   scenarioBack.appendChild(scenarioBackBackground);
   scenarioBack.appendChild(scenarioDifficulty);
@@ -85,9 +139,9 @@ function buildScenario(quickScenario) {
 
   let credit = document.createElement("created-with");
   credit.textContent = "spiritislandbuilder.com";
-  let meeple = document.createElement("custom-meeple");
+  let meeple_back = document.createElement("custom-meeple");
   scenarioBack.appendChild(credit);
-  scenarioBack.appendChild(meeple);
+  scenarioBack.appendChild(meeple_back);
 
   let allComments = document.querySelectorAll("comment");
   console.log("number of comments in js: " + allComments.length);

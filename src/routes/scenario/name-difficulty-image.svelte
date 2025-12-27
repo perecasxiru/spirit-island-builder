@@ -21,7 +21,7 @@
   </div>
   <div class="field">
     <label class="label is-flex is-justify-content-space-between" for="scenarioNameInput"
-      >Scenario Name & Diffuclty
+      >Scenario Name & Difficulty
     </label>
     <div class="field is-flex is-small mb-0">
       <div class="control" style="width:80%">

@@ -12,6 +12,7 @@
   import NameDifficultyImage from "./name-difficulty-image.svelte";
   import BackScenario from "./back-scenario.svelte";
   import CustomIcons from "../custom-icons.svelte";
+  import LanguageOptions from "./language-options.svelte";
   // import InstructionsLink from "$lib/instructions/link.svelte";
   // import Examples from "$lib/example-modal.svelte";
 
@@ -136,6 +137,13 @@
     const scenarioStyle = document.createElement("style");
     fragment.prepend(scenarioStyle);
     scenarioStyle.textContent = customIconText;
+
+    // Set language
+    if (scenario.language) {
+      scenarioHeader.setAttribute("lang", scenario.language);
+    } else {
+      scenarioHeader.setAttribute("lang", "en");
+    }
 
     return fragment;
   }
@@ -277,6 +285,7 @@
     <FrontScenario bind:scenario />
     <BackScenario bind:scenario />
     <CustomIcons customIcons={scenario.customIcons} />
+    <LanguageOptions bind:scenario />
   </div>
   <div class="column pt-0">
     <PreviewFrame id="scenario-preview" bind:this={previewFrame} on:hot-reload={reloadPreview}>
