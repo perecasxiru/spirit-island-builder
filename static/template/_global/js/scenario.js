@@ -72,8 +72,6 @@ function buildScenario(quickScenario) {
   const textScenario = localize[lang]["scenario"];
   const textDifficulty = localize[lang]["difficulty"];
 
-  console.log("AAAA Building scenario in language: " + lang);
-
   // Build Scenario
   let scenario = document.createElement("scenario");
   scenario.setAttribute("lang", lang); // Set lang on the wrapper for CSS fonts
